@@ -2,4 +2,6 @@
 
 echo "System testing of sample assemblies"
 
-py.test
+echo $PATH
+
+# py.test
