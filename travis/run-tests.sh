@@ -8,4 +8,6 @@ which python
 
 python -c "import numpy"
 
+which py.test
+
 # py.test
