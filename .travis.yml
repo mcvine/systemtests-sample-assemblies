@@ -29,6 +29,7 @@ install:
   - conda create -n testenv python=$TRAVIS_PYTHON_VERSION
   - source activate testenv
   - conda install mcvine mcvine.workflow mcvine.phonon
+  - conda install pytest
 
 script:
   - bash travis/run-tests.sh
