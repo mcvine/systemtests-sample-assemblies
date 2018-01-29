@@ -15,7 +15,6 @@ else
     conda config --add channels mcvine
     conda create -n testenv python=$TRAVIS_PYTHON_VERSION
     source activate testenv
-    const install numpy
     conda install -c mcvine/label/unstable mcvine mcvine.workflow mcvine.phonon
     conda install pytest
 fi
