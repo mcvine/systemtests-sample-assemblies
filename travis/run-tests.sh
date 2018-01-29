@@ -5,6 +5,6 @@ set -e
 echo "System testing of sample assemblies"
 
 source activate testenv
-const install numpy
+conda install numpy
 
 py.test
