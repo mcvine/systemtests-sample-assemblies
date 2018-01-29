@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
 
+set -e
+
 echo "System testing of sample assemblies"
 
-echo $PATH
-
-which python
-
+source activate testenv
 python -c "import numpy"
-
 which py.test
-
 # py.test
