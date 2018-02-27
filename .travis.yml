@@ -20,6 +20,7 @@ before_install:
   - if [ -d /home/travis/mc ] ; then export USE_CACHE=yes; echo "Use cache"; else export USE_CACHE=no; fi
   - ./travis/before_install.sh
   - export PATH=/home/travis/mc/bin:$PATH
+  - git clone https://github.com/yxqd/dotmantid ~/.mantid
 
 install:
   - ./travis/install.sh
