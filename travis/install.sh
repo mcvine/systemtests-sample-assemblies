@@ -12,8 +12,9 @@ else
     conda config --set always_yes true
     conda update conda
     conda config --add channels conda-forge
-    conda config --add channels mcvine
+    conda config --add channels diffpy
     conda config --add channels mantid
+    conda config --add channels mcvine
     conda create -n testenv python=$TRAVIS_PYTHON_VERSION
     source activate testenv
     conda install -c conda-forge numpy
