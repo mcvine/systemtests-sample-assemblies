@@ -26,7 +26,7 @@ install:
   - ./travis/install.sh
 
 script:
-  - ./travis/run-tests.sh
+  - ./travis/keep_alive.sh ./travis/run-tests.sh .
 
 notifications:
   email:
