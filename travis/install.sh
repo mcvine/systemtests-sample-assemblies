@@ -18,6 +18,6 @@ else
     conda create -n testenv python=$TRAVIS_PYTHON_VERSION
     source activate testenv
     conda install -c conda-forge numpy
-    conda install -c mcvine/label/unstable mcvine
+    conda install -c mcvine/label/unstable mcvine=1.3.5
     conda install pytest
 fi
