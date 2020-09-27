@@ -15,9 +15,6 @@ else
     conda config --add channels diffpy
     conda config --add channels mantid
     conda config --add channels mcvine
-    conda create -n testenv python=$TRAVIS_PYTHON_VERSION
+    conda create -n testenv -c mcvine/label/unstable mcvine=1.4 pytest python=$TRAVIS_PYTHON_VERSION
     source activate testenv
-    conda install -c conda-forge numpy
-    conda install -c mcvine/label/unstable mcvine=1.3.5
-    conda install pytest
 fi
